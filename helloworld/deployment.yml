@@ -1,0 +1,28 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: helloworld-deployment
+  namespace: hello
+  labels:
+    name: helloworld
+  annotations:
+    flux.weave.works/automated: true
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: helloworld
+  template:
+    metadata:
+      labels:
+        name: helloworld
+    spec:
+      automountServiceAccountToken: false
+      containers:
+      - name: helloworld
+        image: 081522272738.dkr.ecr.us-west-2.amazonaws.com/scheetz/helloworld-orb:pr34_94
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 80
+protocol: TCP

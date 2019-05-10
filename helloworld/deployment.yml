@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: helloworld-deployment
-  namespace: scheetz
+  namespace: mclaren
   labels:
     name: helloworld
   annotations:

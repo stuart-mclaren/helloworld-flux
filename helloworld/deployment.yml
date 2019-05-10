@@ -21,7 +21,7 @@ spec:
       automountServiceAccountToken: false
       containers:
       - name: helloworld
-        image: 081522272738.dkr.ecr.us-west-2.amazonaws.com/scheetz/helloworld-orb:pr35_97
+        image: 581310303425.dkr.ecr.us-west-1.amazonaws.com/mclaren/test:0.0.1
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80

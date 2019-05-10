@@ -8,7 +8,6 @@ metadata:
     app: podinfo
   annotations:
     flux.weave.works/automated: "true"
-    flux.weave.works/tag.podinfod: semver:*
 spec:
   strategy:
     rollingUpdate:
@@ -25,7 +24,7 @@ spec:
         app: podinfo
     spec:
       containers:
-      - name: podinfod
+      - name: podinfo
         image: 581310303425.dkr.ecr.us-west-1.amazonaws.com/mclaren/test:1.3.2
         imagePullPolicy: IfNotPresent
         ports:

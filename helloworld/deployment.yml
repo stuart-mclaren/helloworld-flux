@@ -8,7 +8,7 @@ metadata:
     name: helloworld
   annotations:
     flux.weave.works/automated: "true"
-    flux.weave.works/tag.podinfod: semver:~0.0
+    flux.weave.works/tag.helloworld: semver:~0.0
 spec:
   replicas: 1
   selector:

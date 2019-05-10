@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: helloworld
-  namespace: scheetz
+  namespace: mclaren
   labels:
     name: helloworld
 spec:
